@@ -33,6 +33,6 @@ _thread.start_new_thread(checkRange,(6000000000,7000000000))
 _thread.start_new_thread(checkRange,(7000000000,8000000000))
 _thread.start_new_thread(checkRange,(8000000000,9000000000))
 _thread.start_new_thread(checkRange,(9000000000,10000000000))
-while finnished !=10:
+while finnished !=9:
     pass
 print("your time is: " + str(time.time()-start))
