@@ -18,6 +18,7 @@ def check(i):
 
 
 def checkRange(b,e):
+    global finnished
     for x in range(b,e):
         check(x)
         if x%10000000==0:
