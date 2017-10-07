@@ -1,6 +1,7 @@
 import _thread, time
 start = time.time()
 def check(i):
+    i*=10
     s = str(i)
     for x in range(10):
         if not str(x) in s:
@@ -23,16 +24,16 @@ def checkRange(b,e):
             print(x)
     finnished += 1
 finnished = 0
-check(3816547290)
-_thread.start_new_thread(checkRange,(1000000000,2000000000))
-_thread.start_new_thread(checkRange,(2000000000,3000000000))
-_thread.start_new_thread(checkRange,(3000000000,4000000000))
-_thread.start_new_thread(checkRange,(4000000000,5000000000))
-_thread.start_new_thread(checkRange,(5000000000,6000000000))
-_thread.start_new_thread(checkRange,(6000000000,7000000000))
-_thread.start_new_thread(checkRange,(7000000000,8000000000))
-_thread.start_new_thread(checkRange,(8000000000,9000000000))
-_thread.start_new_thread(checkRange,(9000000000,10000000000))
+check(381654729)
+_thread.start_new_thread(checkRange,(100000000,200000000))
+_thread.start_new_thread(checkRange,(200000000,300000000))
+_thread.start_new_thread(checkRange,(300000000,400000000))
+_thread.start_new_thread(checkRange,(400000000,500000000))
+_thread.start_new_thread(checkRange,(500000000,600000000))
+_thread.start_new_thread(checkRange,(600000000,700000000))
+_thread.start_new_thread(checkRange,(700000000,800000000))
+_thread.start_new_thread(checkRange,(800000000,900000000))
+_thread.start_new_thread(checkRange,(900000000,1000000000))
 while finnished !=9:
     pass
 print("your time is: " + str(time.time()-start))
